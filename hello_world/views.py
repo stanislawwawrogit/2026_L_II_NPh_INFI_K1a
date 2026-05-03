@@ -14,6 +14,6 @@ def index():
     return get_formatted(msg, moje_imie,
                          output.lower())
 
-@app.route('/outputs')
+@app.route('/output')
 def supported_output():
     return ", ".join(SUPPORTED)
